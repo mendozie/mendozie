@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="396" height="34" viewBox="0 0 396 34" role="img" aria-labelledby="title desc"><title id="title">Curious by default. Always building.</title><desc id="desc">A short, one-time typing animation. Reduced motion shows the complete sentence immediately.</desc><g font-family="-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Arial, sans-serif"><style>
+      @keyframes reveal { from { width: 0; } to { width: 370px; } }
+      @keyframes travel { from { transform: translateX(0); } to { transform: translateX(370px); } }
+      @keyframes blink { 0%, 49% { opacity: .85; } 50%, 100% { opacity: 0; } }
+      .reveal { animation: reveal 2.1s steps(35,end) .2s both; }
+      .cursor { opacity: 0; animation: travel 2.1s steps(35,end) .2s both, blink .6s step-end 5; }
+      @media (prefers-reduced-motion: reduce) { .reveal, .cursor { animation: none; } .cursor { opacity: 0; } }
+    </style>
+    <defs><clipPath id="typing"><rect class="reveal" x="0" y="0" width="370" height="34"/></clipPath></defs>
+    <g clip-path="url(#typing)"><text x="0" y="23" fill="#e8b56d" font-family="Consolas, 'Liberation Mono', monospace" font-size="17.5">Curious by default. Always building.</text></g>
+    <g class="cursor"><path d="M0 8v19" stroke="#e8b56d" stroke-width="1.8"/></g></g></svg>
